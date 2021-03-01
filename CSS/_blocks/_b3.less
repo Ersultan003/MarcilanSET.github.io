@@ -1,0 +1,97 @@
+// main: ..//style.less
+
+
+
+.b3 {
+    padding: 90px 0;
+
+    .b3_wrapper {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        .b3_inner {
+            .b3_item {
+                width: 400px;
+                margin-bottom: 30px;
+
+                h2 {
+                    color: #1F4FFC;
+
+                    &::after {
+                        content: "";
+                        border-bottom: 3px solid #1F4FFC;
+                        height: 3px;
+                        width: 200px;
+                        display: block;
+                        margin: 10px 0;
+                    }
+                }
+           
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            h4 {
+                font-size: 16px;
+                color: #7B7B7B;
+            }
+
+            
+
+            .b3_text {
+                margin-top: 20px;
+
+                p {
+                    font-family: "MuseoSansLight";
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .b3 {
+        .b3_wrapper {
+            width: 900px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .b3 {
+        padding: 20px 0;
+
+        .b3_wrapper {
+            width: 300px;
+            flex-direction: column;
+            .b3_img {
+                width: 250px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .b3 {
+
+        .b3_wrapper {
+     
+
+            .b3_inner {
+                .b3_item {
+                    width: auto;
+                   
+                }
+            }
+        }
+    }
+}
